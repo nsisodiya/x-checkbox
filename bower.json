@@ -1,0 +1,23 @@
+{
+  "name": "x-checkbox",
+  "version": "0.0.1",
+  "homepage": "https://github.com/nssodiya/x-checkbox",
+  "authors": [
+    "Narendra Sisodiya <narendra@narendrasisodiya.com>"
+  ],
+  "description": "Boot Progressbar",
+  "main": "src/x-checkbox.js",
+  "keywords": [
+    "webcomponents"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test"
+  ],
+  "dependencies": {
+    "platform": "Polymer/platform"
+  }
+}

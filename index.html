@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+    <title>X-Checkbox Demo</title>
+
+    <!-- Importing Polyfill -->
+    <script src="bower_components/platform/platform.js"></script>
+    <script src="src/x-checkbox.js"></script>
+    <link charset='utf-8' href='src/x-checkbox.css' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+
+    <h2> Simple Checkbox</h2>
+
+    <pre lang="js">
+    &lt;input type="checkbox">
+    </pre>
+    <input type="checkbox">
+
+
+    <!-- Using Custom Element -->
+    <h2> Custom Element Checkbox</h2>
+
+    <pre lang="js">
+    &lt;input is="x-checkbox">
+    </pre>
+    <input is="x-checkbox"><br>
+
+
+    <h2> Custom Element Checkbox - Checked</h2>
+
+    <pre lang="js">
+    &lt;input is="x-checkbox" checked>
+    </pre>
+    <input is="x-checkbox" checked><br>
+
+
+    <!-- Using Custom Element -->
+    <h2> Custom Element Checkbox with Theme = switch</h2>
+
+    <pre lang="js">
+    &lt;input is="x-checkbox" theme="switch">
+    </pre>
+    <div>
+        <input is="x-checkbox" theme="switch">
+    </div>
+
+    <br>
+    <!-- Using Custom Element -->
+    <h2> Custom Element Checkbox with Theme = switch , Checked</h2>
+
+    <pre lang="js">
+    &lt;input is="x-checkbox" checked theme="switch">
+    </pre>
+    <div>
+        <input is="x-checkbox" theme="switch" checked>
+    </div>
+
+
+
+  </body>
+</html>
