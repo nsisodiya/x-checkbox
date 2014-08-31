@@ -1,4 +1,4 @@
-boot-progressbar
+x-checkbox
 ================
 
-Custom Element for Progressbar ! similar to bootstrap progress bar !
+Custom Element for Checkbox !
