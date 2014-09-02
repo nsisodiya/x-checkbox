@@ -5,7 +5,7 @@
   "authors": [
     "Narendra Sisodiya <narendra@narendrasisodiya.com>"
   ],
-  "description": "Boot Progressbar",
+  "description": "Custom Element for input type checkbox",
   "main": "src/x-checkbox.js",
   "keywords": [
     "webcomponents"
