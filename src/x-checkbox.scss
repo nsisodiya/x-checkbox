@@ -2,35 +2,36 @@
 @import "compass/css3/border-radius";
 
 input[is=x-checkbox][theme=default] {
-  display: none;
+  position: absolute;
+  left: -9999px;
   & + label {
-    padding: 1px;
-    border: 1px solid #848484;
+    border: 1px solid #777;
     @include border-radius(2px);
     margin: 0 3px 0 0;
-    position:relative;
-    &:after {
-      content: '';
-      display: inline-block;
-      height: 6px;
-      margin-bottom: 3px;
-      width: 18px;
-      border: 2px solid transparent;
-      border-top:none;
-      border-right:none;
-      @include transform(rotate(-45deg));
-    }
-  }
-    &:checked + label {
-      &:after {
-        border-color:#848484;
+    height:18px;
+    width:18px;
+    display:inline-block;
+    svg {
+      g line {
+        stroke-opacity:0;
       }
     }
+  }
+  &:checked + label {
+    svg {
+      g line {
+        stroke-opacity:1;
+      }
+    }
+  }
+  &:focus + label {
+    box-shadow: 0 0 3px 0 grey;
+  }
 }
 
-
 input[is=x-checkbox][theme=switch] {
-  display: none;
+  position: absolute;
+  left: -9999px;
   & + label {
     border: 1px solid #ccc;
     overflow: hidden;

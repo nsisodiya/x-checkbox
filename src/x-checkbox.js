@@ -36,15 +36,25 @@
       }
 
       var theme = this.getAttribute('theme');
-      console.log(theme);
       if(theme === null){
         this.setAttribute("theme","default");
+	var strokeColor = this.getAttribute('color');
+        if(strokeColor == null){
+          strokeColor = "#15a4fa";
+        }
+        l1.innerHTML = '<svg width="18" height="18" xmlns="http://www.w3.org/2000/svg">\
+         <g>\
+          <title>Layer 1</title>\
+          <g id="svg_6">\
+           <line id="svg_3" y2="13.441725" x2="7.866685" y1="8.542455" x1="3.080045" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="3" stroke="'+ strokeColor + '" fill="none"/>\
+           <line id="svg_4" y2="13.399495" x2="5.797165" y1="4.558275" x1="14.919955" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="3" stroke="'+ strokeColor + '" fill="none"/>\
+          </g>\
+         </g>\
+        </svg>';
       }
       if(theme === "switch"){
         l1.innerHTML = '<span class="switchOn">ON</span><span class="switchOff">OFF</span>';
       }
-      console.log(l1);
-
       this.parentNode.insertBefore(l1, this.nextSibling);
     },
     attachedCallback: function() {},

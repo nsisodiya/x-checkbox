@@ -1,42 +1,38 @@
 /* line 4, x-checkbox.scss */
 input[is=x-checkbox][theme=default] {
-  display: none;
+  position: absolute;
+  left: -9999px;
 }
-/* line 6, x-checkbox.scss */
+/* line 7, x-checkbox.scss */
 input[is=x-checkbox][theme=default] + label {
-  padding: 1px;
-  border: 1px solid #848484;
+  border: 1px solid #777;
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
   border-radius: 2px;
   margin: 0 3px 0 0;
-  position: relative;
-}
-/* line 12, x-checkbox.scss */
-input[is=x-checkbox][theme=default] + label:after {
-  content: '';
-  display: inline-block;
-  height: 6px;
-  margin-bottom: 3px;
+  height: 18px;
   width: 18px;
-  border: 2px solid transparent;
-  border-top: none;
-  border-right: none;
-  -moz-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
+  display: inline-block;
 }
-/* line 25, x-checkbox.scss */
-input[is=x-checkbox][theme=default]:checked + label:after {
-  border-color: #848484;
+/* line 15, x-checkbox.scss */
+input[is=x-checkbox][theme=default] + label svg g line {
+  stroke-opacity: 0;
+}
+/* line 22, x-checkbox.scss */
+input[is=x-checkbox][theme=default]:checked + label svg g line {
+  stroke-opacity: 1;
+}
+/* line 27, x-checkbox.scss */
+input[is=x-checkbox][theme=default]:focus + label {
+  box-shadow: 0 0 3px 0 grey;
 }
 
 /* line 32, x-checkbox.scss */
 input[is=x-checkbox][theme=switch] {
-  display: none;
+  position: absolute;
+  left: -9999px;
 }
-/* line 34, x-checkbox.scss */
+/* line 35, x-checkbox.scss */
 input[is=x-checkbox][theme=switch] + label {
   border: 1px solid #ccc;
   overflow: hidden;
@@ -47,7 +43,7 @@ input[is=x-checkbox][theme=switch] + label {
   border-radius: 3px;
   background: #444;
 }
-/* line 43, x-checkbox.scss */
+/* line 44, x-checkbox.scss */
 input[is=x-checkbox][theme=switch] + label span {
   position: absolute;
   width: 100%;
@@ -67,22 +63,22 @@ input[is=x-checkbox][theme=switch] + label span {
   -moz-transition-timing-function: ease-in;
   transition-timing-function: ease-in;
 }
-/* line 62, x-checkbox.scss */
+/* line 63, x-checkbox.scss */
 input[is=x-checkbox][theme=switch] + label span.switchOn {
   left: 100%;
   background: #428bca;
 }
-/* line 66, x-checkbox.scss */
+/* line 67, x-checkbox.scss */
 input[is=x-checkbox][theme=switch] + label span.switchOff {
   left: 0;
   background: #444;
 }
-/* line 74, x-checkbox.scss */
+/* line 75, x-checkbox.scss */
 input[is=x-checkbox][theme=switch]:checked + label span.switchOff {
   left: -100%;
   background: #444;
 }
-/* line 78, x-checkbox.scss */
+/* line 79, x-checkbox.scss */
 input[is=x-checkbox][theme=switch]:checked + label span.switchOn {
   left: 0%;
 }
