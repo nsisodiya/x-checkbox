@@ -1,9 +1,8 @@
 /* line 4, x-checkbox.scss */
 input[is=x-checkbox][theme=default] {
-  position: absolute;
-  left: -9999px;
+  display: none;
 }
-/* line 7, x-checkbox.scss */
+/* line 6, x-checkbox.scss */
 input[is=x-checkbox][theme=default] + label {
   border: 1px solid #777;
   -moz-border-radius: 2px;
@@ -14,25 +13,24 @@ input[is=x-checkbox][theme=default] + label {
   width: 18px;
   display: inline-block;
 }
-/* line 15, x-checkbox.scss */
+/* line 14, x-checkbox.scss */
 input[is=x-checkbox][theme=default] + label svg g line {
   stroke-opacity: 0;
 }
-/* line 22, x-checkbox.scss */
+/* line 21, x-checkbox.scss */
 input[is=x-checkbox][theme=default]:checked + label svg g line {
   stroke-opacity: 1;
 }
-/* line 27, x-checkbox.scss */
+/* line 26, x-checkbox.scss */
 input[is=x-checkbox][theme=default]:focus + label {
   box-shadow: 0 0 3px 0 grey;
 }
 
-/* line 32, x-checkbox.scss */
+/* line 31, x-checkbox.scss */
 input[is=x-checkbox][theme=switch] {
-  position: absolute;
-  left: -9999px;
+  display: none;
 }
-/* line 35, x-checkbox.scss */
+/* line 33, x-checkbox.scss */
 input[is=x-checkbox][theme=switch] + label {
   border: 1px solid #ccc;
   overflow: hidden;
@@ -43,7 +41,7 @@ input[is=x-checkbox][theme=switch] + label {
   border-radius: 3px;
   background: #444;
 }
-/* line 44, x-checkbox.scss */
+/* line 42, x-checkbox.scss */
 input[is=x-checkbox][theme=switch] + label span {
   position: absolute;
   width: 100%;
@@ -63,22 +61,22 @@ input[is=x-checkbox][theme=switch] + label span {
   -moz-transition-timing-function: ease-in;
   transition-timing-function: ease-in;
 }
-/* line 63, x-checkbox.scss */
+/* line 61, x-checkbox.scss */
 input[is=x-checkbox][theme=switch] + label span.switchOn {
   left: 100%;
   background: #428bca;
 }
-/* line 67, x-checkbox.scss */
+/* line 65, x-checkbox.scss */
 input[is=x-checkbox][theme=switch] + label span.switchOff {
   left: 0;
   background: #444;
 }
-/* line 75, x-checkbox.scss */
+/* line 73, x-checkbox.scss */
 input[is=x-checkbox][theme=switch]:checked + label span.switchOff {
   left: -100%;
   background: #444;
 }
-/* line 79, x-checkbox.scss */
+/* line 77, x-checkbox.scss */
 input[is=x-checkbox][theme=switch]:checked + label span.switchOn {
   left: 0%;
 }

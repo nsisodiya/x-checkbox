@@ -2,8 +2,7 @@
 @import "compass/css3/border-radius";
 
 input[is=x-checkbox][theme=default] {
-  position: absolute;
-  left: -9999px;
+  display: none;
   & + label {
     border: 1px solid #777;
     @include border-radius(2px);
@@ -30,8 +29,7 @@ input[is=x-checkbox][theme=default] {
 }
 
 input[is=x-checkbox][theme=switch] {
-  position: absolute;
-  left: -9999px;
+  display: none;
   & + label {
     border: 1px solid #ccc;
     overflow: hidden;
