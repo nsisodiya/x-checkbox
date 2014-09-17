@@ -2,11 +2,11 @@
 @import "compass/css3/border-radius";
 
 input[is=x-checkbox][theme=default] {
-  display: none;
+  opacity:0;
   & + label {
     border: 1px solid #777;
     @include border-radius(2px);
-    margin: 0 3px 0 0;
+    margin: 0 3px 0 -15px;
     height:18px;
     width:18px;
     display:inline-block;

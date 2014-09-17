@@ -1,6 +1,6 @@
 /* line 4, x-checkbox.scss */
 input[is=x-checkbox][theme=default] {
-  display: none;
+  opacity: 0;
 }
 /* line 6, x-checkbox.scss */
 input[is=x-checkbox][theme=default] + label {
@@ -8,7 +8,7 @@ input[is=x-checkbox][theme=default] + label {
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
   border-radius: 2px;
-  margin: 0 3px 0 0;
+  margin: 0 3px 0 -15px;
   height: 18px;
   width: 18px;
   display: inline-block;
