@@ -5,7 +5,7 @@ input[is=x-checkbox][theme=default] {
   opacity:0;
   & + label {
     border: 1px solid #777;
-    @include border-radius(2px);
+    @include border-radius(3px);
     margin: 0 3px 0 -15px;
     height:18px;
     width:18px;

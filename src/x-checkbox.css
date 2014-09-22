@@ -5,9 +5,9 @@ input[is=x-checkbox][theme=default] {
 /* line 6, x-checkbox.scss */
 input[is=x-checkbox][theme=default] + label {
   border: 1px solid #777;
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
   margin: 0 3px 0 -15px;
   height: 18px;
   width: 18px;

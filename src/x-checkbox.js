@@ -46,8 +46,8 @@
          <g>\
           <title>Layer 1</title>\
           <g id="svg_6">\
-           <line id="svg_3" y2="13.441725" x2="7.866685" y1="8.542455" x1="3.080045" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="3" stroke="'+ strokeColor + '" fill="none"/>\
-           <line id="svg_4" y2="13.399495" x2="5.797165" y1="4.558275" x1="14.919955" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="3" stroke="'+ strokeColor + '" fill="none"/>\
+           <line fill="none" stroke="' + strokeColor + '" stroke-width="3" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x1="4.74984" y1="8.40224" x2="8.61635" y2="12.35973" id="svg_3"/>\
+           <line fill="none" stroke="' + strokeColor + '" stroke-width="3" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x1="13.88806" y1="5.1161" x2="6.51893" y2="12.25778" id="svg_4"/>\
           </g>\
          </g>\
         </svg>';
